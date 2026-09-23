@@ -1,0 +1,77 @@
+// Week 3 - MongoDB commands used to create the database and insert sample data
+// Run these in the Mongo shell (mongosh) while mongod is running.
+
+use student_success
+
+db.students.insertMany([
+  {
+    studentId: 1,
+    firstName: "Maria",
+    lastName: "Chen",
+    email: "maria.chen@example.edu",
+    program: "Computer Science",
+    notes: [
+      { noteId: 1, date: "2026-09-05", advisor: "Heather Combs", category: "academic plan", text: "Discussed course load for next term and adjusted registration plan." },
+      { noteId: 2, date: "2026-09-12", advisor: "Heather Combs", category: "well-being", text: "Checked in about balancing coursework with part-time job. Recommended time management workshop." }
+    ],
+    supportVisits: [
+      { visitId: 1, date: "2026-08-05", type: "workshop", description: "Attended study skills workshop." },
+      { visitId: 2, date: "2026-09-10", type: "tutoring", description: "Tutoring session for Data Structures." },
+      { visitId: 3, date: "2026-09-15", type: "writing center", description: "Writing center help with lab report." }
+    ]
+  },
+  {
+    studentId: 2,
+    firstName: "Jordan",
+    lastName: "Smith",
+    email: "jordan.smith@example.edu",
+    program: "Business Administration",
+    notes: [
+      { noteId: 3, date: "2026-08-20", advisor: "Mark Lee", category: "academic plan", text: "Reviewed degree progress and remaining core requirements." }
+    ],
+    supportVisits: [
+      { visitId: 4, date: "2026-07-01", type: "writing center", description: "Help drafting a business proposal." }
+    ]
+  },
+  {
+    studentId: 3,
+    firstName: "Aisha",
+    lastName: "Patel",
+    email: "aisha.patel@example.edu",
+    program: "Biology",
+    notes: [
+      { noteId: 4, date: "2026-09-02", advisor: "Heather Combs", category: "academic plan", text: "Discussed switching lab sections due to schedule conflict." },
+      { noteId: 5, date: "2026-09-16", advisor: "Priya Nair", category: "well-being", text: "Talked through stress around upcoming exams." }
+    ],
+    supportVisits: [
+      { visitId: 5, date: "2026-09-18", type: "tutoring", description: "Tutoring session for Organic Chemistry." },
+      { visitId: 6, date: "2026-06-10", type: "workshop", description: "Attended note-taking strategies workshop." }
+    ]
+  },
+  {
+    studentId: 4,
+    firstName: "Diego",
+    lastName: "Ramirez",
+    email: "diego.ramirez@example.edu",
+    program: "Psychology",
+    notes: [
+      { noteId: 6, date: "2026-08-28", advisor: "Mark Lee", category: "career", text: "Discussed internship options for next summer." }
+    ],
+    supportVisits: [
+      { visitId: 7, date: "2026-09-01", type: "tutoring", description: "Tutoring session for Statistics." }
+    ]
+  },
+  {
+    studentId: 5,
+    firstName: "Sam",
+    lastName: "Okafor",
+    email: "sam.okafor@example.edu",
+    program: "Computer Science",
+    notes: [
+      { noteId: 7, date: "2026-09-10", advisor: "Priya Nair", category: "academic plan", text: "Planned course sequence for final year." }
+    ],
+    supportVisits: [
+      { visitId: 8, date: "2026-08-30", type: "writing center", description: "Help with resume and cover letter." }
+    ]
+  }
+])
