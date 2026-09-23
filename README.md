@@ -1,4 +1,4 @@
-Relational vs. Document Modeling in MongoDB
+# Relational vs. Document Modeling in MongoDB
 
 ## Scenario
 
