@@ -1,4 +1,4 @@
-# CST 335 – Week 3 Assignment: Relational vs. Document Modeling in MongoDB
+Relational vs. Document Modeling in MongoDB
 
 ## Scenario
 
