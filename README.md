@@ -27,4 +27,4 @@ The MongoDB design feels strongest for the kind of reads advisors actually need.
 
 ## AI Assistance
 
-I used Claude to help me design the relational and MongoDB data models, draft the MongoDB commands and queries, and make sure my integrity reflection was written in plain, beginner-friendly language. I reviewed and adjusted the design decisions myself.
+I used Claude to help me think through the trade-offs between embedding and referencing data in MongoDB, to work through the syntax and structure for the collections and aggregation queries, and to check my understanding of the CAP theorem and consistency concepts against the Week 3 lessons.
